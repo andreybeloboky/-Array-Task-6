@@ -1,11 +1,11 @@
 package com.company;
 
-/*
- * @param arr - user-entered array ;
- * @param from - start of array ;
- * @param to - end of array ;
- */
 public class QuickSort {
+    /**
+     * @param arr  - user-entered array ;
+     * @param from - start of array ;
+     * @param to   - end of array ;
+     */
     public static void sortingAnArray(int[] arr, int from, int to) {
         if (from < to) {
             int splitIndex = sortingArray(arr, from, to);
@@ -18,7 +18,7 @@ public class QuickSort {
      * @param arr   - user-entered array ;
      * @param left  (from) - start of array ;
      * @param right (to) - end of array ;
-     *              return the final value of the initial value of the array, taking into account the shift;
+     * @return the final value of the initial value of the array, taking into account the shift;
      */
     public static int sortingArray(int[] arr, int left, int right) {
         int center = left;
