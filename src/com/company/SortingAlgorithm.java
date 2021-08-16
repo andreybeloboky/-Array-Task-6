@@ -7,21 +7,21 @@ package com.company;
  * return the final value of the initial value of the array, taking into account the shift;
  */
 public class SortingAlgorithm {
-    public static int sortingArray(int[] arr, int L, int R) {
-        int B = L;
-        while (L <= R) {
-            while (arr[B] > arr[L]) {
-                L++;
+    public static int sortingArray(int[] arr, int left, int right) {
+        int center = left;
+        while (left <= right) {
+            while (arr[center] > arr[left]) {
+                left++;
             }
-            while (arr[R] > arr[B]) {
-                R--;
+            while (arr[right] > arr[center]) {
+                right--;
             }
-            if (L <= R) {
-                CellExchange.exchangeOfValuesInCells(arr, L, R);
-                L++;
-                R--;
+            if (left <= right) {
+                CellExchange.exchangeOfValuesInCells(arr, left, right);
+                left++;
+                right--;
             }
         }
-        return L;
+        return left;
     }
 }

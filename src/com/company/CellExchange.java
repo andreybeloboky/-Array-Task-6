@@ -6,9 +6,9 @@ package com.company;
  * @param R (to) - end of array ;
  */
 public class CellExchange {
-    public static void exchangeOfValuesInCells(int[] arr, int L, int R) {
-        int temp = arr[L];
-        arr[L] = arr[R];
-        arr[R] = temp;
+    public static void exchangeOfValuesInCells(int[] arr, int left, int right) {
+        int temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
     }
 }
